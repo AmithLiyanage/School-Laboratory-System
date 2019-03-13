@@ -1,0 +1,11 @@
+# src
+|----# app
+|    |----# teachers
+|    |    |----teachers.components.ts|.html|.css
+|    |    |----# teacher
+|    |    |    |----teacher.components.ts|.html|.css
+|    |    |    
+|    |    |----# shared
+|    |    |    |----teacher.service.ts (form group)
+|    |    
+|    |----app.module.ts
