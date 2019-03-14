@@ -11,6 +11,12 @@ export class TeacherComponent implements OnInit {
 
   constructor(private service: TeacherService) { }
 
+  subjects = [
+    { id: 1, value: 'Chemistry'},
+    { id: 2, value: 'Physics'},
+    { id: 3, value: 'Biology'}
+  ];
+
   ngOnInit() {
   }
 

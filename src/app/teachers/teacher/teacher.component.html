@@ -20,7 +20,34 @@
         </div>
       </mat-grid-tile>
       <mat-grid-tile>
-
+        <div class="controles-container">
+          <div class="add-bottom">
+            <mat-radio-group formControlName="gender">
+              <mat-radio-button value="1">Male</mat-radio-button>
+              <mat-radio-button value="2">Female</mat-radio-button>
+              <mat-radio-button value="3">Other</mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <mat-form-field>
+            <mat-select formControlName="subject" placeholder="Subject">
+              <mat-option>None</mat-option>
+              <ng-container *ngFor="let subject of subjects">
+                <mat-option value="{{subject.id}}">{{subject.value}}</mat-option>
+              </ng-container>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field>
+            <!-- date input -->
+            <input formControlName="hireDate" matInput [matDatepicker]="picker" placeholder="Hire Date">
+            <!-- calander icon -->
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <!-- responsible for calander -->
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          <div class="add-botton-padding">
+            <mat-checkbox formControlName="isPermanent">Permenent Teacher</mat-checkbox>
+          </div>
+        </div>
       </mat-grid-tile>
     </mat-grid-list>    
 </form>

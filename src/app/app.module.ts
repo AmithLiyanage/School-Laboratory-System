@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MaterialModule } from './material/material.module'; 
-//import { MatFormFieldModule } from '@angular/material/form-field';//new
+import { MaterialModule } from './material/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
@@ -24,8 +23,8 @@ import { TeacherService } from './shared/teacher.service';
   imports: [ 
     BrowserModule,
     MaterialModule,
-    //MatFormFieldModule,//new
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment),//.firebaseConfig
     AngularFirestoreModule

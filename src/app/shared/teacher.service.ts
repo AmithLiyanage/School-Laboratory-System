@@ -14,7 +14,9 @@ export class TeacherService {
     email: new FormControl(''),
     mobile: new FormControl(''),
     gender: new FormControl('1'),// 1 for radio button
-    subject: new FormControl('0')//0 for select from drop doun list
-    //varibaleName: new FormControl(false) // for true false, default false
+    subject: new FormControl('0'),//0 for select from drop doun list
+    //varibaleName: new FormControl(false) // for true false checkbox, default false
+    hireDate: new FormControl(''),//extra
+    isPermanent: new FormControl(false)
   });
 }
