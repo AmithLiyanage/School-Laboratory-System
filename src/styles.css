@@ -10,3 +10,12 @@ div.container {
   Every toolbar row uses a flexbox row layout. */
   flex: 1 1 auto;
 }
+
+form.normal-form {
+  margin: 10px;
+} 
+
+.controles-container {
+  width: 100%;
+  padding: 5%;
+}

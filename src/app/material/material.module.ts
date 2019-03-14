@@ -6,10 +6,16 @@ import * as Material from '@angular/material';
   declarations: [],
   imports: [
     CommonModule,
-    Material.MatToolbarModule
-  ],
+    Material.MatToolbarModule,
+    Material.MatGridListModule,
+    Material.MatFormFieldModule,
+    Material.MatInputModule
+  ], 
   exports: [
-    Material.MatToolbarModule
+    Material.MatToolbarModule,
+    Material.MatGridListModule,
+    Material.MatFormFieldModule,
+    Material.MatInputModule
   ]
 })
 export class MaterialModule { }

@@ -1,3 +1,26 @@
-<p>
-  teacher works!
-</p>
+<form [formGroup]="service.form" class="normal-form">
+  <!-- grade list components -->
+  <mat-grid-list cols="2" rowHeight="300px">
+      <mat-grid-tile>
+        <div class="controles-container">
+          <input type="hidden" formControlName="$key">
+          <!-- for add text boxes -->
+          <mat-form-field>
+            <input formControlName="fullname" matInput placeholder="Full Name">
+          </mat-form-field>
+          <mat-form-field>
+            <input formControlName="email" matInput placeholder="Email">
+          </mat-form-field>
+          <mat-form-field>
+            <input formControlName="mobile" matInput placeholder="Mobile">
+          </mat-form-field>
+          <!-- <mat-form-field>
+            <input formControlName="mobile" matInput placeholder="Mobile">
+          </mat-form-field> -->
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+
+      </mat-grid-tile>
+    </mat-grid-list>    
+</form>
