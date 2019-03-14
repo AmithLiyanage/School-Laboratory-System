@@ -20,4 +20,10 @@ export class TeacherComponent implements OnInit {
   ngOnInit() {
   }
 
+  //for reset form
+  onClear() {
+    this.service.form.reset();
+    this.service.initializeFormGroup();//new initialized function
+  }
+
 }

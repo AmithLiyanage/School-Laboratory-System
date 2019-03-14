@@ -14,18 +14,20 @@ import * as Material from '@angular/material';
     Material.MatSelectModule,
     Material.MatCheckboxModule,//perment employee check box
     Material.MatDatepickerModule,// for date
-    Material.MatNativeDateModule// for date
+    Material.MatNativeDateModule,// for date
+    Material.MatButtonModule, //for button style
   ], 
   exports: [
     Material.MatToolbarModule,
     Material.MatGridListModule,
-    Material.MatFormFieldModule,
+    Material.MatFormFieldModule,// it also include mat-error
     Material.MatInputModule,
     Material.MatRadioModule,
     Material.MatSelectModule,
     Material.MatCheckboxModule,//perment employee check box
     Material.MatDatepickerModule,// for date
-    Material.MatNativeDateModule// for date
+    Material.MatNativeDateModule,// for date
+    Material.MatButtonModule, //for button style
   ]
 })
 export class MaterialModule { }
