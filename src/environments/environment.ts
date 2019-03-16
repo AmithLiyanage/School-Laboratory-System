@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+
   firebaseConfig : {
     apiKey: "AIzaSyCrlFLVRu3AeFqL2jQjdcpxFVhrvgHSPMw",
     authDomain: "school-laboratory-system.firebaseapp.com",
@@ -12,7 +13,7 @@ export const environment = {
     storageBucket: "school-laboratory-system.appspot.com",
     messagingSenderId: "348490908062"
   }
- 
+
 };
 
 /*
