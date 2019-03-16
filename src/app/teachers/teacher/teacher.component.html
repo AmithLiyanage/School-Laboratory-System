@@ -40,6 +40,10 @@
               <ng-container *ngFor="let subject of subjects">
                 <mat-option value="{{subject.id}}">{{subject.value}}</mat-option>
               </ng-container>
+              <!-- chanange to dynamic array -->
+              <!-- <ng-container *ngFor="let subject of subjectService.array">
+                <mat-option value="{{subject.$key}}">{{subject.code}}-{{subject.name}}</mat-option>
+              </ng-container> -->
             </mat-select>
           </mat-form-field>
           <mat-form-field>

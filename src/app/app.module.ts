@@ -16,6 +16,7 @@ import { environment } from 'src/environments/environment';//link to environemen
 import { TeachersComponent } from './teachers/teachers.component';
 import { TeacherComponent } from './teachers/teacher/teacher.component';
 import { TeacherService } from './shared/teacher.service';
+import { SubjectService } from './shared/subject.service';
 
 
 @NgModule({
@@ -35,7 +36,7 @@ import { TeacherService } from './shared/teacher.service';
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
-  providers: [TeacherService],
+  providers: [TeacherService, SubjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

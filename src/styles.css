@@ -30,7 +30,7 @@ form.normal-form {
 
 /* radio group */
 mat-radio-group mat-radio-button {
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .button-row button {

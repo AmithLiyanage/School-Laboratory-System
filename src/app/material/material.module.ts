@@ -16,11 +16,12 @@ import * as Material from '@angular/material';
     Material.MatDatepickerModule,// for date
     Material.MatNativeDateModule,// for date
     Material.MatButtonModule, //for button style
+    Material.MatSnackBarModule, //for popup notification
   ], 
   exports: [
     Material.MatToolbarModule,
     Material.MatGridListModule,
-    Material.MatFormFieldModule,// it also include mat-error
+    Material.MatFormFieldModule,// it also include mat-error function
     Material.MatInputModule,
     Material.MatRadioModule,
     Material.MatSelectModule,
@@ -28,6 +29,7 @@ import * as Material from '@angular/material';
     Material.MatDatepickerModule,// for date
     Material.MatNativeDateModule,// for date
     Material.MatButtonModule, //for button style
+    Material.MatSnackBarModule, //for popup notification
   ]
 })
 export class MaterialModule { }
