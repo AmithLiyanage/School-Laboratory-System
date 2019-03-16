@@ -18,12 +18,21 @@ export class TeacherComponent implements OnInit {
   ];
 
   ngOnInit() {
+    this.service.getTeachers();
   }
 
   //for reset form
   onClear() {
     this.service.form.reset();
     this.service.initializeFormGroup();//new initialized function
+  }
+
+  onSubmit() {
+    if (this.service.form.valid) {
+      this.service.insertTeacher(this.service.form.value);
+      this.service.form.reset();
+      this.service.initializeFormGroup();
+    }
   }
 
 }
