@@ -28,7 +28,6 @@ export class TeacherComponent implements OnInit {
   onClear() {
     this.service.form.reset();
     this.service.initializeFormGroup();//new initialized function
-    this.notificationService.success(':: Submit Successfully');
   }
 
   onSubmit() {
@@ -36,7 +35,7 @@ export class TeacherComponent implements OnInit {
       this.service.insertTeacher(this.service.form.value);
       this.service.form.reset();
       this.service.initializeFormGroup();
-      // this.notificationService.success(':: Submit Successfully');
+      this.notificationService.success(':: Submit Successfully');
     }
   }
 
