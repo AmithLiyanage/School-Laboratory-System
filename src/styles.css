@@ -13,7 +13,7 @@ div.container {
 
 form.normal-form {
   margin: 10px;
-} 
+}
 
 .controles-container {
   width: 100%;
@@ -45,4 +45,8 @@ snack-bar-container.success {
 snack-bar-container.notification simple-snack-bar {
   font-size: 18px !important;
   font-weight: bold;
+}
+
+body {
+  margin: 0px;
 }

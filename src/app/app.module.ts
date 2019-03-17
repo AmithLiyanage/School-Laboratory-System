@@ -17,13 +17,17 @@ import { TeachersComponent } from './teachers/teachers.component';
 import { TeacherComponent } from './teachers/teacher/teacher.component';
 import { TeacherService } from './shared/teacher.service';
 import { SubjectService } from './shared/subject.service';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TeachersComponent,
-    TeacherComponent
+    TeacherComponent,
+    MainNavComponent
   ],
   imports: [ 
     BrowserModule,
@@ -34,7 +38,13 @@ import { SubjectService } from './shared/subject.service';
     //AngularFireModule.initializeApp(environment.firebaseConfig),
     //AngularFirestoreModule
     AngularFireDatabaseModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [TeacherService, SubjectService],
   bootstrap: [AppComponent]
