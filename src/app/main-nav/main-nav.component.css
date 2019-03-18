@@ -15,3 +15,25 @@
   top: 0;
   z-index: 1;
 }
+
+.hidden {
+  display: none;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* hide nav for max length */
+/* @media (min-width: 768px) {
+  .si denav {
+    display: none;
+  }
+} */
