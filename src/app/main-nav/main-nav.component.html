@@ -1,5 +1,8 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+  <mat-sidenav
+      #drawer
+      class="sidenav"
+      fixedInViewport="false"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="!(isHandset$ | async)">
@@ -25,6 +28,7 @@
       <a href="#">Logout</a>
       <a href="#">Settings</a>
     </mat-toolbar>
-    <!-- Add Content Here -->
+    <!-- Added Content Here -->
+    <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>

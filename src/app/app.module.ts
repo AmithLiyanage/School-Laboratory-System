@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //import { AngularFireModule } from '@angular/fire';//firebase
-import { AngularFirestoreModule } from '@angular/fire/firestore';//firebase
+//import { AngularFirestoreModule } from '@angular/fire/firestore';//firebase
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -29,7 +29,7 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     TeacherComponent,
     MainNavComponent
   ],
-  imports: [ 
+  imports: [
     BrowserModule,
     MaterialModule,
     ReactiveFormsModule,
