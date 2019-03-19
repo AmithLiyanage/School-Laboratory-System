@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponent } from './app-routing.module';//newly added routingComponent for routing
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';//link to environement to access fiirebase environement
 import { TeachersComponent } from './teachers/teachers.component';
@@ -27,7 +27,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     AppComponent,
     TeachersComponent,
     TeacherComponent,
-    MainNavComponent
+    MainNavComponent,
+    routingComponent,// for routing
   ],
   imports: [
     BrowserModule,
