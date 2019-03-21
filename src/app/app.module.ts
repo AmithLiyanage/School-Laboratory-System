@@ -19,7 +19,13 @@ import { TeacherService } from './shared/teacher.service';
 import { SubjectService } from './shared/subject.service';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import {
+  MatToolbarModule,
+  MatButtonModule,
+  MatSidenavModule,
+  MatIconModule,
+  MatListModule,
+  MatExpansionModule } from '@angular/material';
 
 
 @NgModule({
@@ -45,7 +51,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatExpansionModule,//expand list
   ],
   providers: [TeacherService, SubjectService],
   bootstrap: [AppComponent]
