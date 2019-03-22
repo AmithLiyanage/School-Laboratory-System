@@ -2,8 +2,8 @@
 
 @include mat-core();
 
-$amith-theme-primary: mat-palette($mat-cyan);//600 , A700
-$amith-theme-accent: mat-palette($mat-pink, A200, A100, A400);
+$amith-theme-primary: mat-palette($mat-pink);//600 , A700
+$amith-theme-accent: mat-palette($mat-cyan, A200, A100, A400);
 $amith-theme-warn: mat-palette($mat-red);
 
 $amith-theme: mat-light-theme($amith-theme-primary, $amith-theme-accent, $amith-theme-warn);
