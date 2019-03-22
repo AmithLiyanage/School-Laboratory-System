@@ -25,7 +25,8 @@ import {
   MatSidenavModule,
   MatIconModule,
   MatListModule,
-  MatExpansionModule } from '@angular/material';
+  MatExpansionModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+import { ChemicalsComponent } from './chemicals/chemicals.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import {
     TeachersComponent,
     TeacherComponent,
     MainNavComponent,
-    routingComponent,// for routing
+    routingComponent,
+    ChemicalsComponent,// for routing
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,10 @@ import {
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatExpansionModule,//expand list
+    MatExpansionModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,//expand list
   ],
   providers: [TeacherService, SubjectService],
   bootstrap: [AppComponent]
