@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MaterialModule } from './material/material.module';
+
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -13,12 +13,21 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppRoutingModule, routingComponent } from './app-routing.module';//newly added routingComponent for routing
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';//link to environement to access fiirebase environement
+
+//components
 import { TeachersComponent } from './teachers/teachers.component';
 import { TeacherComponent } from './teachers/teacher/teacher.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { ChemicalsComponent } from './chemicals/chemicals.component';
+
+//services
 import { TeacherService } from './shared/teacher.service';
 import { SubjectService } from './shared/subject.service';
-import { MainNavComponent } from './main-nav/main-nav.component';
+
 import { LayoutModule } from '@angular/cdk/layout';
+
+//material
+import { MaterialModule } from './material/material.module';
 import {
   MatToolbarModule,
   MatButtonModule,
@@ -26,7 +35,7 @@ import {
   MatIconModule,
   MatListModule,
   MatExpansionModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
-import { ChemicalsComponent } from './chemicals/chemicals.component';
+
 
 
 @NgModule({

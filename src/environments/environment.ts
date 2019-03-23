@@ -4,7 +4,6 @@
 
 export const environment = {
   production: false,
-
   firebaseConfig : {
     apiKey: "AIzaSyCrlFLVRu3AeFqL2jQjdcpxFVhrvgHSPMw",
     authDomain: "school-laboratory-system.firebaseapp.com",

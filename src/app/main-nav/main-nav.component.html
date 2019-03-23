@@ -15,12 +15,12 @@
           <mat-expansion-panel-header>
             Equipments
           </mat-expansion-panel-header>
-          <a mat-list-item href="#" >Permenent Equ</a>
+          <a mat-list-item href="#" >Permenent</a>
           <a mat-list-item href="#" >Glasswares</a>
           <a mat-list-item href="#" >Perishables</a>
-          <a mat-list-item href="#" >Chemicals</a>
+          <a mat-list-item [routerLink]="['/chemicals']" routerLinkActive="router-link-active"href="#" >Chemicals</a>
       </mat-expansion-panel>
-      <a mat-list-item [routerLink]="['/chemicals']" routerLinkActive="router-link-active"  >Data Table</a>
+      <a mat-list-item href="#"  >Data Table</a>
       <a mat-list-item [routerLink]="['/teachers']" routerLinkActive="router-link-active" >Teachers</a>
     </mat-nav-list>
   </mat-sidenav>
