@@ -2,8 +2,31 @@
 
 @include mat-core();
 
-$amith-theme-primary: mat-palette($mat-pink);//600 , A700
-$amith-theme-accent: mat-palette($mat-cyan, A200, A100, A400);
+// colors
+// unwanted from here
+// $mat-red: (#d32f2f);
+// $mat-pink: (#c2185b);
+// $mat-purple: (#7b1fa2);
+// $mat-deep-purple: (#512da8);
+// $mat-indigo: (#303f9f);
+// $mat-blue: (#1976d2);
+// $mat-light-blue: (#0288d1);
+// $mat-cyan: (#0097a7);
+// $mat-teal: (#00796b);
+// $mat-green: (#388e3c);
+// $mat-light-green: (#689f38);
+// $mat-lime: (#afb42b);
+// $mat-yellow: (#fbc02d);
+// $mat-amber: (#ffa000);
+// $mat-orange: (#f57c00);
+// $mat-deep-orange: (#e64a19);
+// $mat-brown: (#5d4037);
+// $mat-grey: (#616161);
+// $mat-blue-grey: (#455a64);
+//unwanted to here
+
+$amith-theme-primary: mat-palette($mat-teal);//600 , A700
+$amith-theme-accent: mat-palette($mat-blue-gray, A200, A100, A400);
 $amith-theme-warn: mat-palette($mat-red);
 
 $amith-theme: mat-light-theme($amith-theme-primary, $amith-theme-accent, $amith-theme-warn);
